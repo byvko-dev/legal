@@ -15,7 +15,12 @@ var serviceWebsiteURL = "https://byvko.dev"
 var lastUpdatedDate = fmt.Sprint(time.Date(2024, 07, 07, 0, 0, 0, 0, time.UTC).Format("Jan _2 2006"))
 
 func main() {
-	err := renderToFile(PrivacyPolicy(), "privacy-policy", true)
+	err := os.MkdirAll("build", os.ModePerm)
+	if err != nil {
+		panic(err)
+	}
+
+	err = renderToFile(PrivacyPolicy(), "privacy-policy", true)
 	if err != nil {
 		panic(err)
 	}
