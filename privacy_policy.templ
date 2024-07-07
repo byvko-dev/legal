@@ -115,7 +115,7 @@ templ PrivacyPolicy() {
 				</ul>
 			}
 		</ul>
-		<ol class="list-decimal">
+		<ol class="list-decimal flex flex-col gap-8">
 			@legalSection("What Information Do We Collect?") {
 				<ul class="list-disc pl-4 flex flex-col gap-2">
 					@legalSection("Personal information you disclose to us") {
@@ -223,7 +223,7 @@ templ PrivacyPolicy() {
 					</li>
 				</ul>
 			}
-			@legalSection("How Do We Process Your Information?") {
+			@legalSection("What Legal Bases Do We Rely On To Process Your Information?") {
 				<p>
 					<span class="font-bold">In Short:</span> We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e. , legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests.
 				</p>
@@ -384,14 +384,16 @@ templ PrivacyPolicy() {
 				<p>
 					<span class="font-bold underline">Opting out of marketing and promotional communications:</span> You can unsubscribe from our marketing and promotional communications at any time by clicking on the unsubscribe link in the emails that we send, or by contacting us using the details provided in the section "How Can You Contact Us About This Notice?" below. You will then be removed from the marketing lists. However, we may still communicate with you — for example, to send you service-related messages that are necessary for the administration and use of your account, to respond to service requests, or for other non-marketing purposes.
 				</p>
-				@legalSection("Account Information") {
-					<p>
-						If you would at any time like to review or change the information in your account or terminate your account, you can contact us using the contact information provided.
-					</p>
-					<p>
-						Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.
-					</p>
-				}
+				<ul class="flex flex-col gap-4">
+					@legalSection("Account Information") {
+						<p>
+							If you would at any time like to review or change the information in your account or terminate your account, you can contact us using the contact information provided.
+						</p>
+						<p>
+							Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.
+						</p>
+					}
+				</ul>
 				<p>
 					<span class="font-bold underline">Cookies and similar technologies:</span> Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Services. To opt out of interest-based advertising by advertisers on our Services visit <a href="http://www.aboutads.info/choices/">http://www.aboutads.info/choices/</a>.
 				</p>
@@ -414,119 +416,121 @@ templ PrivacyPolicy() {
 				<p>
 					If you are under 18 years of age, reside in California, and have a registered account with Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g. , backups, etc.).
 				</p>
-				@legalSection("CCPA Privacy Notice") {
-					<p>
-						The California Code of Regulations defines a "resident" as:
-					</p>
-					<ul class="list-disc pl-4">
-						<li>
-							(1) every individual who is in the State of California for other than a temporary or transitory purpose and
-						</li>
-						<li>
-							(2) every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose
-						</li>
-					</ul>
-					<p>
-						All other individuals are defined as "non-residents."
-					</p>
-					<p>
-						If this definition of "resident" applies to you, we must adhere to certain rights and obligations regarding your personal information.
-					</p>
-				}
-				@legalSection("How do we use and share your personal information?") {
-					<p>
-						More information about our data collection and sharing practices can be found in this privacy notice.
-					</p>
-					<p>
-						You may contact us by email at ccpa@byvko.dev, or by referring to the contact details at the bottom of this document.
-					</p>
-					<p>
-						If you are using an authorized agent to exercise your right to opt out we may deny a request if the authorized agent does not submit proof that they have been validly authorized to act on your behalf.
-					</p>
-				}
-				@legalSection("Will your information be shared with anyone else?") {
-					<p>
-						We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Each service provider is a for-profit entity that processes the information on our behalf.
-					</p>
-					<p>
-						We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.
-					</p>
-				}
-				@legalSection("Your rights with respect to your personal data") {
-					<p class="underline">
-						Right to request deletion of the data — Request to delete
-					</p>
-					<p>
-						You can ask for the deletion of your personal information. If you ask us to delete your personal information, we will respect your request and delete your personal information, subject to certain exceptions provided by law, such as (but not limited to) the exercise by another consumer of his or her right to free speech, our compliance requirements resulting from a legal obligation, or any processing that may be required to protect against illegal activities.
-					</p>
-					<p class="underline">
-						Right to be informed — Request to know
-					</p>
-					<p>
-						Depending on the circumstances, you have a right to know:
-					</p>
-					<ul class="list-disc pl-4">
-						<li>
-							whether we collect and use your personal information;
-						</li>
-						<li>
-							the categories of personal information that we collect;
-						</li>
-						<li>
-							the purposes for which the collected personal information is used;
-						</li>
-						<li>
-							whether we sell your personal information to third parties;
-						</li>
-						<li>
-							the categories of personal information that we sold or disclosed for a business purpose;
-						</li>
-						<li>
-							the categories of third parties to whom the personal information was sold or disclosed for a business purpose; and
-						</li>
-						<li>
-							the business or commercial purpose for collecting or selling personal information.
-						</li>
-					</ul>
-					<p>
-						In accordance with applicable law, we are not obligated to provide or delete consumer information that is de-identified in response to a consumer request or to re-identify individual data to verify a consumer request.
-					</p>
-					<p class="underline">
-						Right to Non-Discrimination for the Exercise of a Consumer’s Privacy Rights
-					</p>
-					<p>
-						We will not discriminate against you if you exercise your privacy rights.
-					</p>
-					<p class="underline">
-						Verification process
-					</p>
-					<p>
-						Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. These verification efforts require us to ask you to provide information so that we can match it with information you have previously provided us. For instance, depending on the type of request you submit, we may ask you to provide certain information so that we can match the information you provide with the information we already have on file, or we may contact you through a communication method (e.g. , phone or email) that you have previously provided to us. We may also use other verification methods as the circumstances dictate.
-					</p>
-					<p>
-						We will only use personal information provided in your request to verify your identity or authority to make the request. To the extent possible, we will avoid requesting additional information from you for the purposes of verification. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes. We will delete such additionally provided information as soon as we finish verifying you.
-					</p>
-					<p class="underline">
-						Other privacy rights
-					</p>
-					<ul class="list-disc pl-4">
-						<li>
-							You may object to the processing of your personal information.
-						</li>
-						<li>
-							You may request correction of your personal data if it is incorrect or no longer relevant, or ask to restrict the processing of the information.
-						</li>
-						<li>
-							You can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.
-						</li>
-						<li>
-							You may request to opt out from future selling of your personal information to third parties. Upon receiving an opt-out request, we will act upon the request as soon as feasibly possible, but no later than fifteen (15) days from the date of the request submission.
-						</li>
-					</ul>
-					<p>
-						To exercise these rights, you can contact us  by email at ccpa@byvko.dev , or by referring to the contact details at the bottom of this document. If you have a complaint about how we handle your data, we would like to hear from you.
-					</p>
-				}
+				<ul class="flex flex-col gap-4">
+					@legalSection("CCPA Privacy Notice") {
+						<p>
+							The California Code of Regulations defines a "resident" as:
+						</p>
+						<ul class="list-disc pl-4">
+							<li>
+								(1) every individual who is in the State of California for other than a temporary or transitory purpose and
+							</li>
+							<li>
+								(2) every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose
+							</li>
+						</ul>
+						<p>
+							All other individuals are defined as "non-residents."
+						</p>
+						<p>
+							If this definition of "resident" applies to you, we must adhere to certain rights and obligations regarding your personal information.
+						</p>
+					}
+					@legalSection("How do we use and share your personal information?") {
+						<p>
+							More information about our data collection and sharing practices can be found in this privacy notice.
+						</p>
+						<p>
+							You may contact us by email at ccpa@byvko.dev, or by referring to the contact details at the bottom of this document.
+						</p>
+						<p>
+							If you are using an authorized agent to exercise your right to opt out we may deny a request if the authorized agent does not submit proof that they have been validly authorized to act on your behalf.
+						</p>
+					}
+					@legalSection("Will your information be shared with anyone else?") {
+						<p>
+							We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Each service provider is a for-profit entity that processes the information on our behalf.
+						</p>
+						<p>
+							We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.
+						</p>
+					}
+					@legalSection("Your rights with respect to your personal data") {
+						<p class="underline">
+							Right to request deletion of the data — Request to delete
+						</p>
+						<p>
+							You can ask for the deletion of your personal information. If you ask us to delete your personal information, we will respect your request and delete your personal information, subject to certain exceptions provided by law, such as (but not limited to) the exercise by another consumer of his or her right to free speech, our compliance requirements resulting from a legal obligation, or any processing that may be required to protect against illegal activities.
+						</p>
+						<p class="underline">
+							Right to be informed — Request to know
+						</p>
+						<p>
+							Depending on the circumstances, you have a right to know:
+						</p>
+						<ul class="list-disc pl-4">
+							<li>
+								whether we collect and use your personal information;
+							</li>
+							<li>
+								the categories of personal information that we collect;
+							</li>
+							<li>
+								the purposes for which the collected personal information is used;
+							</li>
+							<li>
+								whether we sell your personal information to third parties;
+							</li>
+							<li>
+								the categories of personal information that we sold or disclosed for a business purpose;
+							</li>
+							<li>
+								the categories of third parties to whom the personal information was sold or disclosed for a business purpose; and
+							</li>
+							<li>
+								the business or commercial purpose for collecting or selling personal information.
+							</li>
+						</ul>
+						<p>
+							In accordance with applicable law, we are not obligated to provide or delete consumer information that is de-identified in response to a consumer request or to re-identify individual data to verify a consumer request.
+						</p>
+						<p class="underline">
+							Right to Non-Discrimination for the Exercise of a Consumer’s Privacy Rights
+						</p>
+						<p>
+							We will not discriminate against you if you exercise your privacy rights.
+						</p>
+						<p class="underline">
+							Verification process
+						</p>
+						<p>
+							Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. These verification efforts require us to ask you to provide information so that we can match it with information you have previously provided us. For instance, depending on the type of request you submit, we may ask you to provide certain information so that we can match the information you provide with the information we already have on file, or we may contact you through a communication method (e.g. , phone or email) that you have previously provided to us. We may also use other verification methods as the circumstances dictate.
+						</p>
+						<p>
+							We will only use personal information provided in your request to verify your identity or authority to make the request. To the extent possible, we will avoid requesting additional information from you for the purposes of verification. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes. We will delete such additionally provided information as soon as we finish verifying you.
+						</p>
+						<p class="underline">
+							Other privacy rights
+						</p>
+						<ul class="list-disc pl-4">
+							<li>
+								You may object to the processing of your personal information.
+							</li>
+							<li>
+								You may request correction of your personal data if it is incorrect or no longer relevant, or ask to restrict the processing of the information.
+							</li>
+							<li>
+								You can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.
+							</li>
+							<li>
+								You may request to opt out from future selling of your personal information to third parties. Upon receiving an opt-out request, we will act upon the request as soon as feasibly possible, but no later than fifteen (15) days from the date of the request submission.
+							</li>
+						</ul>
+						<p>
+							To exercise these rights, you can contact us  by email at ccpa@byvko.dev , or by referring to the contact details at the bottom of this document. If you have a complaint about how we handle your data, we would like to hear from you.
+						</p>
+					}
+				</ul>
 			}
 			@legalSection("Do We Make Updates To This Notice?") {
 				<p>
