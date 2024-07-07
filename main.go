@@ -12,7 +12,7 @@ import (
 //go:generate templ generate
 
 var serviceWebsiteURL = "https://byvko.dev"
-var lastUpdatedDate = fmt.Sprint(time.Date(2024, 07, 07, 0, 0, 0, 0, time.UTC).Format("Jan _2 2006"))
+var lastUpdatedDate = fmt.Sprint(time.Now().Format("Jan _2 2006"))
 
 func main() {
 	err := os.MkdirAll("./build", os.ModePerm)
