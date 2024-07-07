@@ -28,6 +28,10 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	err = renderToFile(ReturnPolicy(), "return-policy", true)
+	if err != nil {
+		panic(err)
+	}
 	err = renderToFile(Directory(), "index", true)
 	if err != nil {
 		panic(err)
