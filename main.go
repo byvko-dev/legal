@@ -15,7 +15,7 @@ var serviceWebsiteURL = "https://byvko.dev"
 var lastUpdatedDate = fmt.Sprint(time.Date(2024, 07, 07, 0, 0, 0, 0, time.UTC).Format("Jan _2 2006"))
 
 func main() {
-	err := os.MkdirAll("build", os.ModePerm)
+	err := os.MkdirAll("./build", os.ModePerm)
 	if err != nil {
 		panic(err)
 	}
@@ -36,7 +36,7 @@ func main() {
 
 func renderToFile(component templ.Component, name string, withPartial bool) error {
 	{
-		f, err := os.Create(fmt.Sprintf("build/%s.html", name))
+		f, err := os.Create(fmt.Sprintf("./build/%s.html", name))
 		if err != nil {
 			return err
 		}
@@ -47,7 +47,7 @@ func renderToFile(component templ.Component, name string, withPartial bool) erro
 		}
 	}
 	if withPartial {
-		f, err := os.Create(fmt.Sprintf("build/%s-partial.html", name))
+		f, err := os.Create(fmt.Sprintf("./build/%s-partial.html", name))
 		if err != nil {
 			return err
 		}
